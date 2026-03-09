@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 5726;
 
 const A = require("./A")
 const B = require("./B")

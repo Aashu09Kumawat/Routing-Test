@@ -2,16 +2,10 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const A = require("./A")
-const B = require("./B")
-
 app.get("/", (req, res) => {
-    res.send("Server is running on root.")
+    res.send("Server is running on root");
 })
 
-app.get("/A", A);
-app.get("/B", B)
-
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`Server (Master) running on port ${port}`);
 });

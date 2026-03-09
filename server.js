@@ -5,5 +5,5 @@ app.get("/", (req, res) => {
     res.send("Server is running on root");
 }
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`Server (Master) running on port ${port}`);
 });

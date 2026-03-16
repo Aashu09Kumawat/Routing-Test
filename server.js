@@ -8,6 +8,8 @@ app.get("/", (req, res) => {
 app.get("/test", (req, res) => {
     res.send("You are testing a /test router")
 })
-app.listen(port, () => {
+const HOST = "0.0.0.0";   //  Force IPv4 binding
+
+app.listen(port, HOST, () => {
   console.log(`Server (Master) running on port ${port}`);
 });
